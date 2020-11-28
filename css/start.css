@@ -1,0 +1,125 @@
+body{
+    margin:0;
+}
+
+/*navigation*/
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+#home{
+    position: absolute;
+    margin-left: 70px;
+}
+
+nav img{
+    width:100px;
+    height: 100px;
+    margin: 0 40px;
+    
+}
+
+nav{
+    padding: 20px;
+    position:relative;
+}
+
+nav #navbar{
+    float: right;
+    margin: 30px 100px 20px 20px;
+    font-family:'Righteous', cursive;
+}
+
+#navbar .bar {
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav #navbar .bar:hover{
+    background-color:rgb(250, 214, 9);
+    border-radius: 10px;
+}
+
+nav #navbar a:hover{
+    color:black;
+}
+
+nav #navbar a:active{
+    color: brown;
+}
+
+.drop{
+    position:relative;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(252, 237, 25, 0.8);
+    padding: 8px 12px;
+    margin: 20px;
+}
+
+.dropdown a{
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown a:hover{
+    background: rgb(250, 214, 9);
+    color:black;
+}
+
+.drop:hover .dropdown{
+    display:block;
+}
+
+#welcome {
+    margin: 70px 30%;
+    vertical-align: middle;
+    font-size: 4.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+    /* font-weight: bold; */
+    position: absolute;
+    /* font-family: 'Mansalva', cursive; color: rgb(218, 44, 0); */
+}
+
+/*footer*/
+
+footer{
+    background: black;
+    opacity: 0.5;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+footer p,hr{
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    clear: left;
+}

@@ -1,0 +1,264 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(../images/night-dark-hotel-luxury.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+* {box-sizing: border-box}
+
+nav img{
+    width:100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+nav{
+    padding: 20px;
+}
+
+nav #navbar{
+    float: right;
+    margin: 20px 100px 20px 20px;
+    font-family:'Righteous', cursive;
+}
+
+#navbar .bar {
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav #navbar .bar:hover{
+    background-color:rgb(250, 214, 9);
+    border-radius: 10px;
+}
+
+nav #navbar a:hover{
+    color:black;
+}
+
+nav #navbar a:active{
+    color: brown;
+}
+
+.drop{
+    position:relative;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(252, 237, 25, 0.8);
+    padding: 8px 12px;
+    margin: 20px;
+}
+
+.dropdown a{
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown a:hover{
+    background: rgb(250, 214, 9);
+    color:black;
+}
+
+.drop:hover .dropdown{
+    display:block;
+}
+
+
+/* rooms-image */
+
+h1 {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 3.5em;
+    color: white;
+    font-weight: bold;
+}
+
+#single, #double{
+    width: 600px;
+    height: 500px;
+}
+
+#single-room, #single-rooms,#double-room, #double-rooms{
+    display: inline-flex;
+    flex-wrap: wrap;  
+}
+
+#single-rooms, #double-rooms{
+    margin: 25px 10px 0 10px;
+}
+
+#single-room, #double-room {
+    margin: 50px 50px 50px 100px;
+    padding: 20px;
+    background: black;
+}
+
+#room-info, #room-info1{
+    text-align: justify;
+    margin:0 40px;
+    padding: 20px;
+    height:550px;
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 1.2em;
+    position:relative;
+}
+
+#room-info p:nth-child(4), #room-info1 p:nth-child(4){
+    font-size: 1.5em;
+    font-family: 'Concert One', cursive;
+}
+
+.facility{
+    height:50px;
+    width:300px;
+} 
+
+#single, #double{
+    position:relative;
+}
+
+.left, .right {
+    width: 30px;
+    height:50px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    position: absolute;
+    top:80%;
+}
+
+.right{
+    right:160px;
+}
+
+.left1, .right1 {
+    width: 30px;
+    height:50px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    position: absolute;
+    top:172%;
+}
+
+.right1 {
+    right:160px;
+}
+
+
+/* On hover, change the color of arrows */
+.left:hover, .right:hover,.left1:hover, .right1:hover {
+    color: black;
+}
+
+#book{
+    padding:10px 100px;
+    background: black;
+    color:white;
+    margin-top:20px;
+    position: absolute;
+    cursor:pointer;
+}
+
+#book:hover{
+    background: white;
+    color:black;
+}
+
+
+#bottom{
+    margin-top:40px;
+    width:100%;
+    background: white;
+    opacity: 0.7;
+    position:absolute;
+}
+
+#bottom p{
+    padding: 5px 20px;
+    text-align: justify;
+}
+
+/*footer*/
+
+footer{
+    background: black;
+    opacity: 0.5;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+footer p,hr{
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    clear: left;
+}
+
+/* Free Image on Pixabay - Pool, Spa, Wellness, Hotel, Resort. (n.d.). [Photograph]. Retrieved from 
+    https://pixabay.com/photos/pool-spa-wellness-hotel-resort-384573/
+
+    太空舱双人房间的搜索结果_百度图片搜索. (n.d.). [Photograph]. Retrieved from https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=
+    %E5%A4%AA%E7%A9%BA%E8%88%B1%E5%8F%8C%E4%BA%BA%E6%88%BF%E9%97%B4&step_word=&hs=2&pn=4&spn=0&di=120340&pi=0&rn=1&tn=baiduimagedetail&is=
+    0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=2264206178%2C3301904400&os=2387831291%2C3482382144&simid=
+    4202527258%2C590261257&adpicid=0&lpn=0&ln=911&fr=&fmq=1572761271071_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined©right=
+    undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=
+    http%3A%2F%2Fwww.xiujukoo.com%2Fupimg%2Fallimg%2F161115%2F0317541.jpg&fromurl=
+    ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bxt737h55_z%26e3Bv54AzdH3Fx2pAzdH3Fda8m888ci8nmm9a_z%26e3Bip4s&gsm=&rpstart=0&rpnum=0&islist=&querylist=&force=undefined
+
+    太空舱双人房间的搜索结果_百度图片搜索. (n.d.-b). [Photograph]. Retrieved from https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=
+    d&word=%E5%A4%AA%E7%A9%BA%E8%88%B1%E5%8F%8C%E4%BA%BA%E6%88%BF%E9%97%B4&step_word=&hs=2&pn=43&spn=0&di=110990&pi=0&rn=1&tn=
+    baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=1864940026%2C3215120990&os=969969906%2C2420928342&simid=
+    74067162%2C770803659&adpicid=0&lpn=0&ln=911&fr=&fmq=1572761271071_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined©right=undefined&se=&sme=
+    &tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=
+    http%3A%2F%2Fpix10.agoda.net%2FhotelImages%2F908%2F908806%2F908806_15042217320027033454.jpg%3Fs%3D1024x768&fromurl=
+    ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bw251w_z%26e3Bv54AzdH3Fzi-vgAzdH3Fvwrf7sj-i5fpjsAzdH3Fi5pjsAzdH3Fhjgptg2-po_z%26e3Bip4s%3Fwfq%3Dp%25dk%25dugO5rvxXgZMFl3
+    z8hwNovbp7Cafo0MhiNh8A7ACiy3XgM3ARCnzLsaj9E1MtdEQAqMuXiEDo3Kc5CWVcXSwsc9BJ6nvaj1F6TQLgAHyNh%25n1&gsm=&rpstart=0&rpnum=0&islist=&querylist=&force=undefined
+
+    Free Image on Pixabay - Snowhotel, Kirkenes, Norway. (n.d.). [Photograph]. Retrieved from 
+    https://pixabay.com/photos/snowhotel-kirkenes-norway-2071404/
+
+    https://pixabay.com/photos/capsule-hotel-ljubljana-hotel-room-4375780/
+
+    Black-and-white Pillows on Brown Bed Comforter · Free Stock Photo. (n.d.). [Photograph]. Retrieved from 
+    https://www.pexels.com/photo/apartment-architecture-bed-bedroom-358527/
+    
+    Free Image on Pixabay - Fire, Place, Relaxing, Hotel. (n.d.). [Photograph]. Retrieved from 
+    https://pixabay.com/photos/fire-place-relaxing-hotel-luxury-63881/                                   
+
+*/

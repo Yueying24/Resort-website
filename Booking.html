@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> BOOKING </title>
+        <link href="https://fonts.googleapis.com/css?family=Righteous|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="css/Booking.css">
+        <script src="js/booking.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="images/logo.png"  alt="logo">
+            <div id=navbar>
+                <a class="bar" href="start.html">Home</a>
+                <div class="drop">
+                    <a class="bar">About</a>
+                    <div class="dropdown">
+                        <a href="About Mars.html">Mars</a>
+                        <a href="Atmosphere.html">Atmosphere</a>
+                    </div>
+                </div>
+                <a class="bar" href="Activitiy.html">Activities</a>
+                <a class="bar" href="Booking.html">Booking</a>
+                <a class="bar" href="contact.html">Contact Us</a>
+                <a class="bar" href="login.html">Login</a>
+            </div>
+        </nav>
+        <div id="all">
+            <section id="content">
+                <form id="set-info">
+                    <div id="check-in">
+                        <label>Check In</label><br>
+                        <input id="check" type="date" name="checkin">
+                    </div>
+                    <div id="check-out">
+                        <label>Check Out</label><br>
+                        <input id="check1" type="date" name="checkout">
+                    </div>
+                    <div id="guest">
+                        <label>Guests</label><br>
+                        <input id="num" type="number" name="number" min="0" required>
+                    </div>
+                </form>
+                <div id = "hotel">
+                    <h1> Pick your 'Home' here!</h1>
+                    <button><a onclick="return myFunction()" href="Room-type.html" >Book a room</a></button>
+                </div>
+            </section>
+            <div id="bottom">
+                <p>REFERENCE</p>
+                <p>Empty Sofa · Free Stock Photo. (n.d.). [Photograph]. Retrieved from 
+                    https://www.pexels.com/photo/empty-sofa-2225570/</p>
+                <p>Free Image on Pixabay - Strasbourg, France, Hotel, Hall. (n.d.). [Photograph]. Retrieved from 
+                    https://pixabay.com/photos/strasbourg-france-hotel-hall-105663/</p>
+            </div>
+        </div>
+        <footer>
+            <p>2019 by Yueying Zhang/Flora</p>
+            <p>T:+61 0411172856</p>
+            <p>E-mail:zhangyueying24@gmail.com</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> EVENTS EVERYDAY </title>
+        <link rel="stylesheet"  href="css/Activity.css">
+        <script src="js/Activities.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Righteous|Architects+Daughter|Fugaz+One|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <nav>
+            <img src="images/logo.png"  alt="logo">
+            <div id=navbar>
+                <a class="bar" href="start.html">Home</a>
+                <div class="drop">
+                    <a class="bar">About</a>
+                    <div class="dropdown">
+                        <a href="About Mars.html">Mars</a>
+                        <a href="Atmosphere.html">Atmosphere</a>
+                    </div>
+                </div>
+                <a class="bar" href="Activitiy.html">Activities</a>
+                <a class="bar" href="Booking.html">Booking</a>
+                <a class="bar" href="contact.html">Contact Us</a>
+                <a class="bar" href="login.html">Login</a>
+            </div>
+        </nav>
+        <header>
+            <p><strong>THINGS TO DO </strong></p>
+        </header>
+        <section id="part1">
+            <div class="action1">
+                <p>SPACEWALKING COMPETITION</p>
+                <a href="#blank" class="info1" onclick="myopen1()">MORE INFO</a>
+            </div>
+            <div class="action2">
+                <P>BEACH<br> VOLLEYBALL</P>
+                <a href="#blank" class="info2" onclick="myopen2()">MORE INFO</a>
+            </div>
+        </section>
+
+        <section id="part2">
+            <div class="action3">
+                <P>SPECIAL<br> COOKING</P>
+                <a href="#blank" class="info3" onclick="myopen3()">MORE INFO</a>
+            </div>
+            <div class="action4">
+                <P>ICE<br> HOCKEY</P>
+                <a href="#blank" class="info4" onclick="myopen4()">MORE INFO</a>
+            </div>
+        </section>
+        <div id="blank"></div>
+        <div id="info-text1">
+            <a href="#part1" onclick="myclose1()">×</a>
+            <div class="content">
+                <p>Spacewalking is an exciting and interactive event. The resort will provide each guest with a spacesuit, 
+                    and each contestant will need to travel to the "Mars Space Station". The Mars Space Station 
+                    has a defined track and a viewing venue. In the arena, participants can experience a sense of weightlessness 
+                    in space and the intuitive feeling of touching the surface of Mars. After completing multiple levels, 
+                    the player who first reaches the destination wins. </p>
+                <p >Location: Mars Space Station(level4)</p>
+                <p>Date: 8 pm every Wednesday</p>
+                <p>Requirement: <strong>18 above</strong>(Please bring your ID)</p>
+                <button id="ticket" onclick="success()">GET TICKET</button>
+                <p>Maximum : 20</p>
+            </div>
+        </div>
+        <div id="info-text2">
+            <a href="#part1" onclick="myclose2()">×</a>
+            <div class="content">
+                <p>Although there is no seaside on Mars, the beautiful red sand on the surface is not visible on Earth. 
+                    <br>Would you like to have a hearty game with your friends on the "red clay"? <br>This place is the best choice. </p>
+                <p>Date: 4 pm every Friday<br> 4:30pm every Sunday</p>
+                <p >Location: Red Beach (level3)</p>
+                <p>Requirement: <strong>15 above</strong>(Please bring your ID)</p>
+                <button id="ticket" onclick="success()">GET TICKET</button>
+                <p>Maximum : 50</p>
+            </div>
+        </div>
+        <div id="info-text3">
+            <a href="#part1" onclick="myclose3()">×</a>
+            <div class="content">
+                <p>Do you remember that the hero of the movie Mars Rescue successfully planted vegetables on the surface of Mars? 
+                    <br>Or do you have an impression of the astronauts’ life in the capsule when you watch the news. We will provide 
+                    customers with simulated space capsules and Mars planting bases. Bring your friends here for a unique cooking activity.</p>
+                <p >Location: King-Chef restaurant(level5)</p>
+                <p>Date: 11:00 am every Monday/Thursday </p>
+                <p>Requirement: <strong>No special requirement</strong></p>
+                <button id="ticket" onclick="success()">GET TICKET</button>
+                <p>Maximum : 40</p>
+            </div>
+        </div>
+        <div id="info-text4">
+            <a href="#part1" onclick="myclose4()">×</a>
+            <div class="content">
+                <p>According to the latest findings of scientists, there is much underlying ice on Mars. In the ice rink on the B1 of the Mars Intelligence Club, 
+                    visitors can enjoy the passion of ice hockey and the incredible scenery of glacier sculptures all around rink. </p>
+                <p>Reminder: the temperature of underground glaciers is low, please pay attention to the cold and keep warm.</p>
+                <p >Location: Ice-world (level B1)</p>
+                <p>Date: 7:00 pm every Tuesday/Friday </p>
+                <p>Requirement: <strong>18 above for participants</strong></p>
+                <button id="ticket" onclick="success()">GET TICKET</button>
+                <p>Maximum : 15 （ice hockey)</p>
+            </div>
+        </div>
+        <div id="bottom">
+            <p>The references of this page are in Activity.css</p>
+        </div>
+        <footer>
+            <p>2019 by Yueying Zhang/Flora</p>
+            <p>T:+61 0411172856</p>
+            <p>E-mail:zhangyueying24@gmail.com</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../images/background-mars.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin:0;
+}
+
+nav img{
+    width:100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+nav{
+    padding: 20px;
+}
+
+nav #navbar{ 
+    float: right;
+    margin: 30px 100px 20px 20px;
+    font-family:'Righteous', cursive;
+}
+
+#navbar .bar {
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav #navbar .bar:hover{
+    background-color:rgb(250, 214, 9);
+    border-radius: 10px;
+}
+
+nav #navbar a:hover{
+    color:black;
+}
+
+nav #navbar a:active{
+    color: brown;
+}
+
+.drop{
+    position:relative;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(247, 231, 12, 0.8);
+    padding: 8px 12px;
+    margin: 20px;
+}
+
+.dropdown a{
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown a:hover{
+    background: rgb(250, 214, 9);
+    color:black;
+}
+
+.drop:hover .dropdown{
+    display:block;
+}
+
+/*content & images*/
+
+#atmo{
+    display: inline-flex;
+    flex-direction: row;
+    position:relative;
+}
+
+#atmo h1{
+    color:white;
+    font-family: 'Rubik', sans-serif;
+}
+
+#content{
+    width: 320px;
+    height: 600px;
+    margin: 40px;
+    line-height: 25px;
+    color:white;
+    text-align: justify;
+    font-family: 'Rubik', sans-serif;
+    position:absolute;
+}
+
+img {
+vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+left:30%;
+margin-top: 35px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,.next {
+cursor: pointer;
+position: absolute;
+top: 47%;
+width: 30px;
+padding: 8px 12px;
+margin-top: -40px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 38%;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 75px;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+width:62%;
+font-family: 'Rubik', sans-serif;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 10.333%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,.demo:hover {
+opacity: 1;
+}
+
+
+#bottom{
+    width:100%;
+    background: white;
+    opacity: 0.6;
+    position: absolute; 
+    top:60vw;
+}
+
+#bottom p{
+    padding: 5px 20px;
+}
+/*footer*/
+
+footer{
+    background: black;
+    opacity: 0.5;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+footer p,hr{
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    clear: left;
+}

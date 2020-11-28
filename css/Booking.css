@@ -1,0 +1,201 @@
+body{
+    background: url(../images/background5.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin:0;
+}
+
+/*navigation*/
+
+nav img{
+    width:100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+nav {
+    padding: 20px;
+    position: relative;
+}
+
+nav #navbar {
+    float: right;
+    margin: 30px 100px 20px 20px;
+    font-family: 'Righteous', cursive;
+}
+
+#navbar .bar {
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+nav #navbar .bar:hover{
+    background-color:rgb(250, 214, 9);
+    border-radius: 10px;
+}
+
+nav #navbar a:hover{
+    color:black;
+}
+
+nav #navbar a:active{
+    color: brown;
+}
+
+.drop{
+    position:relative;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(252, 237, 25, 0.8);
+    padding: 8px 12px;
+    margin: 20px;
+}
+
+.dropdown a{
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown a:hover{
+    background: rgb(250, 214, 9);
+    color:black;
+}
+
+.drop:hover .dropdown{
+    display:block;
+}
+
+/* booking info */
+
+#set-info {
+    display: flex;
+    flex-direction: row;
+    margin: 65px 0 10px 60px;
+    width: 800px;
+    opacity: 0.9;
+    color: white;
+    height: 80px;
+    
+}
+
+#check-in, #check-out, #guest{
+    margin: 10px 30px 0 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#check,#check1,#num{
+    width: 240px;
+    height: 15px;
+    padding: 13px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*booking*/
+
+#all{
+    margin:0 auto;
+    vertical-align: middle;
+}
+
+#content {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+#hotel{
+    background: url(../images/hotel-room2.jpg) no-repeat center;
+    width: 800px;
+    height: 600px;
+    background-size: contain;
+    margin: -35px 0 20px 70px;
+    position: relative;
+
+}
+
+#hotel h1 {
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    color: black;
+    padding: 150px 80px 150px 80px;
+    left: 100px;
+    top: 80px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    position: absolute;
+}
+
+#hotel button{
+    border: 1px solid black;
+    padding:15px;
+    position: absolute;
+    top:360px;
+    left:275px;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+    font-size: 1.25em;
+}
+
+#hotel button:hover{
+    background: black;
+}
+
+#hotel button a{
+    text-decoration: none;
+    color:black;
+}
+
+#hotel button a:hover{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+#bottom{
+    margin-top: 40px;
+    width:100%;
+    background: white;
+    opacity: 0.5;
+    position: absolute;
+}
+
+#bottom p{
+    padding: 5px 20px;
+}
+
+/*footer*/
+
+footer{
+    background: black;
+    opacity: 0.5;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+footer p,hr{
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    clear: left;
+}

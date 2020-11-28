@@ -1,0 +1,304 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(../images/background3.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin:0;
+}
+
+nav img{
+    width:100px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+nav {
+    padding: 20px;
+    position: relative;
+}
+
+nav #navbar{
+    float: right;
+    margin: 30px 100px 20px 20px;
+    font-family:'Righteous', cursive;
+}
+
+#navbar .bar {
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav #navbar .bar:hover{
+    background-color:rgb(250, 214, 9);
+    border-radius: 10px;
+}
+
+nav #navbar a:hover{
+    color:black;
+}
+
+nav #navbar a:active{
+    color: brown;
+}
+
+.drop{
+    position:relative;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(252, 237, 25, 0.8);
+    padding: 8px 12px;
+    margin: 20px;
+}
+
+.dropdown a{
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown a:hover{
+    background: rgb(250, 214, 9);
+    color:black;
+}
+
+.drop:hover .dropdown{
+    display:block;
+}
+
+/*activity*/
+
+header {
+    font-size: 4em;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: white;
+}
+
+#part1, #part2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4em 0 4em;
+}
+
+#part1 .action1,.action2, #part2 .action3,.action4{
+    background: dimgray;
+    margin: 30px 50px 30px 90px;
+    padding: 100px;
+    height: 250px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+#part1 .action1{
+    background: url(../images/space-walk2.jpg) no-repeat;
+    background-size: 500px 500px;
+}
+
+#part1 .action2{
+    background: url(../images/beach-volleyball.jpeg) no-repeat;
+    background-size: 500px 500px;
+}
+
+#part2 .action3{
+    background: url(../images/cooking2.jpg) no-repeat;
+    background-size: 500px 500px;
+}
+
+#part2 .action4{
+    background: url(../images/ice-hockey.jpg) no-repeat;
+    background-size: 500px 500px;
+}
+
+#part1 .action1 p,.action2 p, #part2 .action3 p,.action4 p{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: black;
+    font-weight: bold;
+    opacity: 0.7;
+    border:1px solid white;
+    background:white;
+}
+
+#part1 a, #part2 a{
+    background: black;
+    padding: 15px;
+    margin: 45px;
+    border: 1px solid white;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    position:absolute;
+    right: 135px;
+    top:250px;
+}
+
+#part1 a:hover, #part2 a:hover{
+    color:black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#info-text1,#info-text2,#info-text3,#info-text4{
+    width:600px;
+    height:650px;
+    position:relative;
+    top:10%;
+    left:30%;
+    border-radius: 5%;
+    display:none;
+    animation: fadeIn 1s;
+}
+
+#blank{
+    padding: 30px;
+}
+
+#info-text1{
+    background: url("../images/space-wk2.jpg") no-repeat;
+    background-size: 600px 650px;
+}
+
+#info-text2{
+    background: url("../images/beach.jpg") no-repeat;
+    background-size: 600px 650px;
+}
+
+#info-text3{
+    background: url("../images/cooking1.jpg") no-repeat;
+    background-size: 600px 650px;
+}
+
+#info-text4{
+    background: url("../images/ice.jpg") no-repeat;
+    background-size: 600px 650px;
+}
+
+
+#info-text1 a,#info-text2 a, #info-text4 a, #info-text3 a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.content{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    margin:20px 75px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border:10px;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+#ticket{
+    background: black;
+    padding: 10px 15px;
+    margin: 20px 190px;
+    color:white;
+    font-family: 'Fugaz One', cursive;
+    font-size: 0.7em;
+}
+
+#ticket:hover{
+    color:black;
+    background: white;
+    font-family: 'Fugaz One', cursive;
+}
+
+#bottom{
+    margin-top:40px;
+    width:100%;
+    background: white;
+    opacity: 0.7;
+    position:absolute;
+}
+
+#bottom p{
+    margin: 10px 20px 20px 20px;
+}
+/*footer*/
+
+footer{
+    background: black;
+    opacity: 0.5;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+footer p,hr{
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    clear: left;
+}
+
+/* <p>Free Image on Pixabay - Lunar Landscape, Space, Mountains. (n.d.-a). [Photograph]. Retrieved from 
+                https://pixabay.com/illustrations/lunar-landscape-space-mountains-2308000/
+
+            Free Image on Pixabay - Lunar Landscape, Star, Brown Dwarf. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/illustrations/lunar-landscape-star-brown-dwarf-1978303/
+
+            Free Image on Pixabay - Space Suit, Astronaut, World, Earth. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/photos/space-suit-astronaut-world-earth-2539247/
+
+            Free Image on Pixabay - Sandstone, The Wave, Rock, Nature. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/photos/sandstone-the-wave-rock-nature-467714/
+
+            沙滩排球的搜索结果_百度图片搜索. (n.d.). [Photograph]. Retrieved from 
+                http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E6%B2%99%E6%BB%A9%E6%8E%92%E7%90%83&step_word=
+                &hs=0&pn=2&spn=0&di=192390&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=
+                undefined&cs=1592666419%2C790060292&os=1544849604%2C2145397213&simid=3426662342%2C219370973&adpicid=0&lpn=0&ln=629&fr=&fmq=1572860501004_R&fm=
+                &ic=undefined&s=undefined&hd=undefined&latest=undefined©right=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit
+                =&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fdpic.tiankong.com%2Fn6%2Fl9%2FQJ6164203631.jpg%3Fx-oss-process%3Dstyle%2Fshow&fromurl=
+                ippr_z2C%24qAzdH3FAzdH3F4_z%26e3Bq7wg3tg2_z%26e3Bv54AzdH3Ft42tgu5AzdH3F7snamn-0ldl_z%26e3Bip4s&gsm=&rpstart=0&rpnum=0&islist=&querylist=&force=undefined
+
+            Free Image on Pixabay - Meeting, Office, Table, Space. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/photos/meeting-office-table-space-4565703/
+
+            Free Image on Pixabay - Glacier, Ice, Nature, Chile. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/photos/glacier-ice-nature-chile-trekking-1740874/
+
+            Free Image on Pixabay - Ice Hockey, Youth, Winter, Cold. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/photos/ice-hockey-youth-winter-cold-rink-600267/
+
+            Free Image on Pixabay - Bread, Bread Recipes, Recipes. (n.d.). [Photograph]. Retrieved from 
+                https://pixabay.com/photos/bread-bread-recipes-recipes-cooking-2589595/
+*/

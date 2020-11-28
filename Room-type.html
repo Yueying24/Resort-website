@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title> ROOM TYPE </title>
+        <link rel="stylesheet"  href="css/room-type.css">
+        <script src="js/booking.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Righteous|Concert+One|Montserrat|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <nav>
+            <img src="images/logo.png"  alt="logo">
+            <div id=navbar>
+                <a class="bar" href="start.html">Home</a>
+                <div class="drop">
+                    <a class="bar">About</a>
+                    <div class="dropdown">
+                        <a href="About Mars.html">Mars</a>
+                        <a href="Atmosphere.html">Atmosphere</a>
+                    </div>
+                </div>
+                <a class="bar" href="Activitiy.html">Activities</a>
+                <a class="bar" href="Booking.html">Booking</a>
+                <a class="bar" href="contact.html">Contact Us</a>
+                <a class="bar" href="login.html">Login</a>
+            </div>
+        </nav>
+        <div>
+            <h1>HAVE  A  REST</h1>
+            <div id="single-room">
+                <div id="room-info" >
+                    <h2>Single space</h2>
+                    <p>This type of room is exclusively for single travelers. The warm and comfortable space bed, 
+                        the simulated space capsules and fancy atmosphere would make everyone have an immersive experience. </p>
+                    <p> Size: 20 sq ft<br>Beds: 1 Single(s)</p>
+                    <p>Price:<br><strong>From $200</strong></p>
+                    <img class="facility" src="images/facility.png" alt="facility"><br>
+                    <a id="book" onclick="success1()">Book Now</a>
+                </div>
+                <div id="single-rooms">
+                    <img id="single"  src="images/single-room.jpg"  alt="capsule">
+                    <a class="left" onclick="nextroom()">&#10094;</a>
+                    <a class="right" onclick="preroom()">&#10095;</a>
+                </div>
+            </div>
+            <div id="double-room" >
+                <div id="room-info1">
+                    <h2>Super space</h2>
+                    <p> The super space is perfect for couples, family or friends travelling together. The warm and comfortable space bed, 
+                        the simulated space capsules and sci-fi atmosphere would make everyone have an immersive experience. </p>
+                    <p> Size: 35 sq ft - 40 sq ft<br>Beds: 1 Double(s)</p>
+                    <p>Price:<br>From $300</p>
+                    <img class="facility" src="images/facility.png" alt="facility"><br>
+                    <a id="book" onclick="success2()">Book Now</a>
+                </div>
+                <div id="double-rooms">
+                    <img id="double"  src="images/double-room1.jpg"  alt="capsule">
+                    <a class="left1" onclick="nextroom1()">&#10094;</a>
+                    <a class="right1" onclick="preroom1()">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <P>The references of this page are in room-type.css. </P>
+        </div>
+        <footer>
+            <p>2019 by Yueying Zhang/Flora</p>
+            <p>T:+61 0411172856</p>
+            <p>E-mail:zhangyueying24@gmail.com</p>
+        </footer>
+    </body>
+</html>
